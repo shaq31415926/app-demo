@@ -116,4 +116,4 @@ if st.session_state.page_count == 7:
             st.button("Take Quiz Again", on_click=activate_next_page)
 
 if st.session_state.page_count == 8:
-    st.write("That's all for now")
+    st.write("That's all for now. Refresh page to relaunch")
