@@ -46,7 +46,7 @@ if st.session_state.page_count == 2:
         image = Image.open("./images/image1.jpg")
         new_image = image.resize((400, 400))
         st.image(new_image)
-        # TODO: We could also add emotions or
+
         artwork_rating = st.select_slider("Rate this artwork",
                                           ['🤮', '😔', '😐', '😊', '😍'])
         emotion_rating = st.select_slider("How does it make you feel?",
@@ -61,6 +61,8 @@ if st.session_state.page_count == 3:
         st.image(new_image)
         artwork_rating = st.select_slider("Rate this artwork",
                                           ['🤮', '😔', '😐', '😊', '😍'])
+        emotion_rating = st.select_slider("How does it make you feel?",
+                                          ['🤮', '😔', '😐', '😊', '😍'])
 
         st.button(f"Confirm you {artwork_rating} this artwork", on_click=activate_next_page)
 
@@ -72,6 +74,8 @@ if st.session_state.page_count == 4:
 
         artwork_rating = st.select_slider("Rate this artwork",
                                           ['🤮', '😔', '😐', '😊', '😍'])
+        emotion_rating = st.select_slider("How does it make you feel?",
+                                          ['🤮', '😔', '😐', '😊', '😍'])
 
         st.button(f"Confirm you {artwork_rating} this artwork", on_click=activate_next_page)
 
@@ -81,6 +85,8 @@ if st.session_state.page_count == 5:
         new_image = image.resize((400, 400))
         st.image(new_image)
         artwork_rating = st.select_slider("Rate this artwork",
+                                          ['🤮', '😔', '😐', '😊', '😍'])
+        emotion_rating = st.select_slider("How does it make you feel?",
                                           ['🤮', '😔', '😐', '😊', '😍'])
 
         st.button(f"Confirm you {artwork_rating} this artwork", on_click=activate_next_page)
