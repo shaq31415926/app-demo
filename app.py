@@ -26,7 +26,7 @@ def track_hearts():
 
 
 if st.session_state.page_count == 0:
-    st.title("Welcome to SOL")
+    st.title("Welcome to SOAL")
 
     with st.chat_message("user"):
         st.write("Are you interested in:")
