@@ -43,7 +43,7 @@ if st.session_state.page_count == 1:
 
 if st.session_state.page_count == 2:
     with st.chat_message("user"):
-        image = Image.open("./images/image1.jpg")
+        image = Image.open("images/image1.jpg")
         new_image = image.resize((400, 400))
         st.image(new_image)
 
@@ -56,7 +56,7 @@ if st.session_state.page_count == 2:
 
 if st.session_state.page_count == 3:
     with st.chat_message("user"):
-        image = Image.open("./images/image2.jpg")
+        image = Image.open("images/image2.jpg")
         new_image = image.resize((400, 400))
         st.image(new_image)
         artwork_rating = st.select_slider("Rate this artwork",
@@ -68,7 +68,7 @@ if st.session_state.page_count == 3:
 
 if st.session_state.page_count == 4:
     with st.chat_message("user"):
-        image = Image.open("./images/image3.jpg")
+        image = Image.open("images/image3.jpg")
         new_image = image.resize((400, 400))
         st.image(new_image)
 
@@ -81,7 +81,7 @@ if st.session_state.page_count == 4:
 
 if st.session_state.page_count == 5:
     with st.chat_message("user"):
-        image = Image.open("./images/image4.jpg")
+        image = Image.open("images/image4.jpg")
         new_image = image.resize((400, 400))
         st.image(new_image)
         artwork_rating = st.select_slider("Rate this artwork",
