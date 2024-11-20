@@ -32,6 +32,6 @@ if button:
     time.sleep(3)
     placeholder.write(answer)
     time.sleep(2)
-    placeholder.audio("././images/", autoplay=True)
+    placeholder.audio("././music/mixkit-drum-joke-accent-579.wav", autoplay=True)
     time.sleep(2)
     placeholder.empty()
