@@ -32,10 +32,6 @@ if button:
     time.sleep(3)
     placeholder.write(answer)
     time.sleep(2)
-    https: // github.com / shaq31415926 / practical - experience - in -digital - media / blob / main / 05L
-    ecture / images / snowman.jpeg?raw = true
-
-
     placeholder.audio("https://github.com/shaq31415926/app - demo/blob/main/mental-crisis-app/mixkit-drum-joke-accent-579.wav?raw = true", autoplay=True)
     time.sleep(2)
     placeholder.empty()
