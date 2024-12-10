@@ -112,6 +112,3 @@ if st.session_state.personality_count == 1 or st.session_state.soul_count == 1 o
                 destiny_number = calculate_destiny_number(name)
                 st.write(f"Your Destiny Number is {destiny_number}")
                 prompt = st.chat_input(f"Would you like to learn more about your Destiny Number {destiny_number}")
-
-            if prompt:
-                display_prompt_result()
