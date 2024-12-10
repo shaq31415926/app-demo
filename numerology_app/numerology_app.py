@@ -97,13 +97,16 @@ if st.session_state.personality_count == 1 or st.session_state.soul_count == 1 o
             # st.write(f"Your full name is {name}")
             if st.session_state.personality_count == 1:
                 personality_number = calculate_personality_number(name)
+                st.write(f"Your Personality Number is {personality_number}")
                 prompt = st.chat_input(
                     f"Would you like to learn more about your Personality Number {personality_number}")
             if st.session_state.soul_count == 1:
                 soul_number = calculate_soul_number(name)
+                st.write(f"Your Soul Number is {soul_number}")
                 prompt = st.chat_input(f"Would you like to learn more about your Soul Number {soul_number}")
             if st.session_state.destiny_count == 1:
                 destiny_number = calculate_destiny_number(name)
+                st.write(f"Your Destiny Number is {destiny_number}")
                 prompt = st.chat_input(f"Would you like to learn more about your Destiny Number {destiny_number}")
 
             if prompt:
