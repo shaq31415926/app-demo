@@ -107,8 +107,14 @@ if st.session_state.personality_count == 1 or st.session_state.soul_count == 1 o
             if st.session_state.soul_count == 1:
                 soul_number = calculate_soul_number(name)
                 st.write(f"Your Soul Number is {soul_number}")
-                prompt = st.chat_input(f"Would you like to learn more about your Soul Number {soul_number}")
+                prompt_button3 = st.button(f"Would you like to learn more about your Soul Number {soul_number}")
+                if prompt_button3:
+                    prompt = f"Tell me about Soul Number {soul_number}"
+                    display_prompt_result(prompt)
             if st.session_state.destiny_count == 1:
                 destiny_number = calculate_destiny_number(name)
                 st.write(f"Your Destiny Number is {destiny_number}")
-                prompt = st.chat_input(f"Would you like to learn more about your Destiny Number {destiny_number}")
+                prompt_button4 = st.button(f"Would you like to learn more about your Destiny Number {destiny_number}")
+                if prompt_button4:
+                    prompt = f"Tell me about Destiny Number {destiny_number}"
+                    display_prompt_result(prompt)
