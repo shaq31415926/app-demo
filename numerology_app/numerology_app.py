@@ -55,7 +55,7 @@ def activate_destiny():
     st.session_state.soul_count = 0
 
 
-def display_prompt_result():
+def display_prompt_result(prompt):
     with st.spinner("Thinking..."):
         response = generate_response(prompt)
         st.write(response)
@@ -86,9 +86,10 @@ if st.session_state.lifepath_count == 1:
         if dob:
             life_path_number = calculate_life_path_number(dob)
             st.write(f"Your Life Path is {life_path_number}")
-            prompt = st.chat_input(f"Would you like to learn more about your Life Path number {life_path_number}")
-            if prompt:
-                display_prompt_result()
+            prompt_button = st.button(f"Would you like to learn more about your Life Path number {life_path_number}")
+            if prompt_button:
+                prompt = f"Tell me about Life Path number {life_path_number}"
+                display_prompt_result(prompt)
 
 if st.session_state.personality_count == 1 or st.session_state.soul_count == 1 or st.session_state.destiny_count == 1:
     with st.chat_message("assistant"):
