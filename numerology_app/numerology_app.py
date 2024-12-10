@@ -86,8 +86,8 @@ if st.session_state.lifepath_count == 1:
         if dob:
             life_path_number = calculate_life_path_number(dob)
             st.write(f"Your Life Path is {life_path_number}")
-            prompt_button = st.button(f"Would you like to learn more about your Life Path number {life_path_number}")
-            if prompt_button:
+            prompt_button1 = st.button(f"Would you like to learn more about your Life Path number {life_path_number}")
+            if prompt_button1:
                 prompt = f"Tell me about Life Path number {life_path_number}"
                 display_prompt_result(prompt)
 
@@ -99,8 +99,11 @@ if st.session_state.personality_count == 1 or st.session_state.soul_count == 1 o
             if st.session_state.personality_count == 1:
                 personality_number = calculate_personality_number(name)
                 st.write(f"Your Personality Number is {personality_number}")
-                prompt = st.chat_input(
+                prompt_button2 = st.button(
                     f"Would you like to learn more about your Personality Number {personality_number}")
+                if prompt_button2:
+                    prompt = f"Tell me about Personality Number {personality_number}"
+                    display_prompt_result(prompt)
             if st.session_state.soul_count == 1:
                 soul_number = calculate_soul_number(name)
                 st.write(f"Your Soul Number is {soul_number}")
