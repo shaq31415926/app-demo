@@ -66,5 +66,5 @@ if st.session_state.contact_flag == 1:
 # markdown linking to email and code
 if st.session_state.contact_flag == 1 or st.session_state.wisdom_flag == 1:
     st.markdown(
-        "<br><hr><center><p style='font-size: 12px;'>Made with ❤️ by <a href='mailto:shaq@thecollectorsplatform.com?subject=I WANT TO COLLABORATE!'><strong>Sarah Haq</strong></a><br><br>You can find the code for the app <a href='https://github.com/shaq31415926/app-demo' target='_blank'><strong>here</strong></a>.</center><hr>",
+        "<br><hr><center><p style='font-size: 12px;'>Made with ❤️ by <a href='mailto:shaq@thecollectorsplatform.com?subject=I WANT TO COLLABORATE!'><strong>Sarah Haq</strong></a><br><br>You can find the code for the app <a href='https://github.com/shaq31415926/app-demo/blob/main/farewell/farewell.py' target='_blank'><strong>here</strong></a>.</center><hr>",
         unsafe_allow_html=True)
