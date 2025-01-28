@@ -16,6 +16,6 @@ def collaborators():
         # add a giphy, even though slightly truncation
         gif_link = "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnZ3cmN6bnpwM281dDRpaDVnMnp6MnRxendiZTR2dGk0Nnp3NDFzdSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/LoCDk7fecj2dwCtSB3/giphy.gif"
         st.markdown(
-            f"<img src={gif_link} width='300'>",
+            f"<img src='{gif_link}' width='300'>",
             unsafe_allow_html=True
         )
