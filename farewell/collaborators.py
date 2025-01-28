@@ -4,7 +4,7 @@ import streamlit as st
 def collaborators():
     with st.chat_message("user"):
         st.subheader("Open call!")
-        text = """As some of you may already know, I’m planning to start my own company. One of my main goals is to create opportunities and provide experience to those who may not have access to it. I’m currently in the ideation stage, so there’s no funding YET, but the idea is incredibly exciting, if I do say so myself. 
+        text = """As some of you may already know, I’m planning to start my own company. One of my main goals is to create opportunities and provide experience to those who may not have access to it. I’m currently in the ideation stage, so there’s no funding YET, but the idea is COOL, if I do say so myself. 
                         I’ll be fully transparent about the company’s financial situation with founding members.
                         Right now, I’m developing the app and looking for collaborators to help launch it. It’s a low-commitment, low-risk opportunity, and I’m sharing this in case it aligns with your future goals—like, for example, becoming the Head of Marketing for my startup.
                         I don’t want to exploit anyone’s time or resources, but this is a great chance to experiment, make mistakes, and learn. We could really create any role, provided it helps get the company off the ground! I’m keeping things brief on purpose because I’m looking for someone who’ll say, ‘Hell yeah! I want in!’
