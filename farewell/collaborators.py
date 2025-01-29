@@ -12,7 +12,7 @@ def collaborators():
                     I really don’t want to exploit anyone’s time or resources, but I see this is a great chance for anyone interested to experiment, make mistakes, and learn. I’m also keeping things brief on purpose because I’m looking for someone who’ll say, ‘Hell yeah! I want in!’
                     So.. if this resonates with you, drop me an email. Otherwise, feel free to follow me on LinkedIn and stay tuned for what happens! :)
                    """
-            st.write(f'<p style="font-size: 12x; color:grey; text-align: justify;">{text}</p>',
+            st.write(f'<p style="font-size: 11x; color:grey; text-align: justify;">{text}</p>',
                      unsafe_allow_html=True)
 
         with c2:
